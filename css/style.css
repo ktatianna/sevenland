@@ -7,6 +7,9 @@ nav div div ul li .nav-link {
   color: white;
   font-weight: 900;
 }
+nav div div ul li ul li .dropdown-item:active {
+  background-color: #375450;
+}
 
 .banner img {
   width: 100%;
@@ -30,6 +33,9 @@ nav div div ul li .nav-link {
 .main-index div div div .card div .card-title {
   font-family: "Playfair Display", serif;
   text-align: center;
+}
+.main-index div div div .card div p {
+  text-align: justify;
 }
 
 footer {

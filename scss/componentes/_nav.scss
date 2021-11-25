@@ -13,6 +13,17 @@ nav {
                         color: nth($colores, 5);
                         font-weight: 900;
                     }
+
+                    ul{ 
+                        li {
+                            .dropdown-item {
+                                &:active {
+                                    background-color: nth($colores, 3);
+                                }
+                                
+                            }
+                        }
+                    }
                 }
             }
         }
