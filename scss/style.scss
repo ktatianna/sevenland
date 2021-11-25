@@ -1,0 +1,17 @@
+@import './base/listas';
+@import './base/mapas';
+@import './componentes/nav';
+@import './componentes/banner';
+@import './componentes/productos-index';
+@import './componentes/footer';
+@import './componentes/blog';
+@import './componentes/formulario';
+@import './componentes/terrario';
+@import './componentes/paisajismo';
+@import './componentes/recordatorio';
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima Madurai';
+}

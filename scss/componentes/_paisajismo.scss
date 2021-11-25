@@ -1,0 +1,7 @@
+@media (min-width: 481px) {
+
+        .grid-container-paisajismo {
+            @extend.grid-container-terrario;
+            background-color: map-get($accesorios, paisajismo);
+        }
+    }

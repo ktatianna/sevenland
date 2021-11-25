@@ -1,0 +1,20 @@
+nav { 
+    div{ 
+        .titulo-sevenland {
+            color: nth($colores, 5);
+            font-family: 'Playfair Display', serif;
+        }
+        //donde va el hover
+
+        div { 
+            ul { 
+                li { 
+                    .nav-link{
+                        color: nth($colores, 5);
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+}

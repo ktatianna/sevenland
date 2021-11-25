@@ -1,0 +1,260 @@
+@charset "UTF-8";
+nav div .titulo-sevenland {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+nav div div ul li .nav-link {
+  color: white;
+  font-weight: 900;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+}
+
+.main-index {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.main-index .titulo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.main-index div div div .card:hover {
+  transform: translate(1px, -15px);
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+}
+.main-index div div div .card div .card-title {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+footer {
+  padding-top: 60px;
+  background: url(../src/multimedia/img/footer2.jpg) center center;
+  background-size: cover;
+  height: 360px;
+}
+footer div div hr {
+  height: 8px;
+  color: white;
+}
+footer div div div h2 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+footer div div div ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+footer div div div ul li {
+  list-style: none;
+  color: white;
+  text-align: center;
+  font-family: "Arima Madurai";
+  font-size: 18px;
+  padding: 5px;
+  margin: 0;
+}
+footer div div div ul li img:hover {
+  background-color: #a4949a;
+  border-radius: 10px;
+}
+footer div div div p {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: auto !important;
+  }
+}
+.container-blog .titulo-blog {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.container-blog .grid-container .grid-item {
+  background-image: url(../src/multimedia/img/back.PNG);
+}
+.container-blog .grid-container .grid-item-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-blog .grid-container .grid-item-video video {
+  width: 100%;
+  padding: 20px;
+}
+.container-blog .grid-container .blog-text {
+  padding: 1em;
+  padding-right: 2em;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-blog .grid-container .blog-text section h2 {
+  text-align: center;
+}
+.container-blog .grid-container .grid-item:first-child {
+  grid-area: video-one;
+}
+.container-blog .grid-container .grid-item:nth-child(2) {
+  grid-area: text-one;
+}
+.container-blog .grid-container .grid-item:nth-child(3) {
+  grid-area: video-two;
+}
+.container-blog .grid-container .grid-item:nth-child(4) {
+  grid-area: text-two;
+}
+.container-blog .grid-container .grid-item:nth-child(5) {
+  grid-area: music;
+}
+
+@media (min-width: 1000px) {
+  .container-blog .grid-container {
+    margin: 2em 0;
+    display: grid;
+    /*border: 2px solid black; */
+    box-shadow: 10px 5px 5px #a4949a;
+    grid-template-rows: repeat(2, 1fr);
+    /* Definir las columnas */
+    grid-template-columns: 0.8fr 1fr 0.7fr;
+    /* Definir áreas que cubren columnas y filas */
+    grid-template-areas: "video-one text-one music" "video-two text-two music";
+  }
+}
+@media (min-width: 481px) and (max-width: 999px) {
+  .container-blog .grid-container {
+    margin: 2em 0;
+    display: grid;
+    /*border: 2px solid black; */
+    box-shadow: 10px 5px 5px #a4949a;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    /* Definir las columnas */
+    grid-template-columns: 0.8fr 1fr;
+    /* Definir áreas que cubren columnas y filas */
+    grid-template-areas: "video-one text-one " "video-two text-two " "music music";
+  }
+}
+.form-login {
+  background-color: #375450;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: white;
+  border-radius: 10px;
+}
+.form-login .container-fluid .row .form-img {
+  background: url(../src/multimedia/img/fondo-formulario.jpg) center center;
+}
+.form-login .container-fluid .row .form-img-registro {
+  background: url(../src/multimedia/img/registro.jpg) center center;
+}
+.form-login .container-fluid .row .form-info {
+  padding: 4em;
+}
+.form-login .container-fluid .row .form-info h1 {
+  text-align: center;
+}
+.form-login .container-fluid .row .form-info form .form-group {
+  padding: 1em;
+}
+.form-login .container-fluid .row .form-info form button {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.form-login .container-fluid .row .form-info form button:hover {
+  background-color: #98a5a1;
+}
+.form-login .container-fluid .row .form-info form .enlace-registro {
+  text-align: center;
+}
+.form-login .container-fluid .row .form-info form .enlace-registro a {
+  text-decoration: none;
+  color: white;
+}
+.form-login .container-fluid .row .form-info form .enlace-registro a:hover {
+  color: #98a5a1;
+}
+
+@media (max-width: 767px) {
+  .form-img {
+    display: none;
+  }
+
+  .form-img-registro {
+    display: none;
+  }
+}
+.container-accesorios {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.container-accesorios h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+@media (min-width: 481px) {
+  .container-accesorios {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .container-accesorios h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+  }
+  .container-accesorios .grid-container-terrario, .container-accesorios .grid-container-recordatorio, .container-accesorios .grid-container-paisajismo {
+    padding: 2em;
+    display: grid;
+    grid-template-rows: repeat(1, 400px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .container-accesorios .grid-container-terrario .grid-item, .container-accesorios .grid-container-recordatorio .grid-item, .container-accesorios .grid-container-paisajismo .grid-item {
+    padding: 10px;
+  }
+  .container-accesorios .grid-container-terrario .grid-item .carousel .carousel-inner img, .container-accesorios .grid-container-recordatorio .grid-item .carousel .carousel-inner img, .container-accesorios .grid-container-paisajismo .grid-item .carousel .carousel-inner img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .container-accesorios .grid-container-terrario .grid-item .carousel .carousel-inner, .container-accesorios .grid-container-recordatorio .grid-item .carousel .carousel-inner, .container-accesorios .grid-container-paisajismo .grid-item .carousel .carousel-inner {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+  }
+  .container-accesorios .grid-container-terrario .text-accesorios, .container-accesorios .grid-container-recordatorio .text-accesorios, .container-accesorios .grid-container-paisajismo .text-accesorios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) {
+  .grid-container-paisajismo {
+    background-color: #F7FFF2;
+  }
+}
+@media (min-width: 481px) {
+  .grid-container-recordatorio {
+    background-color: #FAF9F3;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arima Madurai";
+}
+
+/*# sourceMappingURL=style.css.map */

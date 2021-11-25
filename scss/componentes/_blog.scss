@@ -1,0 +1,98 @@
+.container-blog{ 
+    .titulo-blog {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    .grid-container{
+        .grid-item{ 
+            background-image: url(../src/multimedia/img/back.PNG);
+        }
+        .grid-item-video{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            video { 
+                width: 100%;
+                padding: 20px;
+            }
+        }
+
+        .blog-text {
+            padding: 1em;
+            padding-right: 2em;
+            vertical-align:middle; 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            section {
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .grid-item:first-child { 
+            grid-area: video-one;
+        }
+        
+        .grid-item:nth-child(2){
+            grid-area: text-one;
+        }
+        
+        .grid-item:nth-child(3){
+            grid-area: video-two; 
+        }
+        
+        .grid-item:nth-child(4){
+            grid-area: text-two; 
+        }
+
+        .grid-item:nth-child(5){
+            grid-area: music; 
+        }
+    }
+}
+
+@media(min-width: 1000px) {
+    .container-blog{ 
+        .grid-container { 
+            margin: 2em 0;
+            display: grid; 
+            /*border: 2px solid black; */
+            box-shadow: 10px 5px 5px nth($colores, 1);
+            
+            grid-template-rows: repeat(2, 1fr) ;
+            /* Definir las columnas */ 
+            grid-template-columns: .8fr 1fr .7fr;
+            /* Definir áreas que cubren columnas y filas */
+            grid-template-areas: 
+            'video-one text-one music'
+            'video-two text-two music'; 
+        }
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 999px){
+    .container-blog { 
+        .grid-container { 
+            margin: 2em 0;
+            display: grid; 
+            /*border: 2px solid black; */
+            box-shadow: 10px 5px 5px nth($colores, 1);
+            
+            grid-template-rows: 1fr 1fr .5fr;
+            /* Definir las columnas */ 
+            grid-template-columns: .8fr 1fr;
+            /* Definir áreas que cubren columnas y filas */
+            grid-template-areas: 
+            'video-one text-one '
+            'video-two text-two '
+            'music music'; 
+        }
+    } 
+}
+

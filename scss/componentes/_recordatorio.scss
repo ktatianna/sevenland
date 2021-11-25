@@ -1,0 +1,10 @@
+
+
+@media (min-width: 481px) {
+
+    .grid-container-recordatorio {
+        @extend.grid-container-terrario;
+        background-color: map-get($accesorios, recordatorios);
+    }
+}
+
